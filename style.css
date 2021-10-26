@@ -1,0 +1,199 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+/* Font */
+@font-face {
+    font-family: Bugfast;
+    src: url('./font/Bugfast.otf');
+}
+
+/* Header */
+div#header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    border-bottom: 2px ridge whitesmoke;
+    box-shadow: 0px 0px 10px gray;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+div#header h1 {
+    font-family: Bugfast;
+    margin-left: 30px;
+}
+
+div#header img {
+    margin-left: 20px;
+}
+
+/* Main */
+div#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contents */
+div#contents {
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 50px;
+    margin-top: 100px;
+    padding: 25px;
+}
+
+div#contents h1 {
+    color: #151B54;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    margin: 0px auto;
+}
+
+article ul > li > h4 {
+    color: #6A0DAD;
+    font-size: 14pt;
+}
+
+fieldset {
+    width: fit-content;
+    border: 2px solid rgb(77, 25, 25);
+    padding: 20px;
+}
+
+legend {
+    background-color: burlywood;
+    border: 2px solid rgb(77, 25, 25);
+    padding: 5px;
+}
+
+tr:nth-child(4) > td:last-child > input {
+    margin-left: 20px;
+}
+
+/* Navigation */
+div#navigation {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 100px 10px auto 10px;
+    background-color: white;
+    height: fit-content;
+}
+
+div#navigation h2 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+section.link-website > div a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+section.link-website > div a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+section.link-sosmed div {
+    margin-left: 20px;
+}
+
+section.link-sosmed > div a {
+    text-decoration: none;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+section.link-sosmed > div a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Footer */
+div#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #483C32;
+    color: white;
+    height: fit-content;
+}
+
+div#footer section:nth-child(2) > ul > li > a,
+div#footer section:last-child > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+div#footer section:nth-child(2) > ul > li > a:hover,
+div#footer section:last-child > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+div#footer section:nth-child(2) > ul > li > a:visited,
+div#footer section:last-child > ul > li > a:visited {
+    color: white;
+}
+
+input.inp-email {
+    padding: 5px;
+    width: 200px;
+}
+
+input.inp-submit {
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    border: 2px solid gray;
+}
+
+input.inp-submit:hover {
+    background-color: darkorange;
+    border: 2px solid black;
+}
+
+ul.link-profile li {
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+}
+
+ul.link-profile li > a:hover {
+    position: relative;
+    animation: animasiSosmed 0.5s forwards;
+}
+
+@keyframes animasiSosmed {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+}
+
+div#footer2 p {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 5px;
+}
